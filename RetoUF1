@@ -1,0 +1,40 @@
+package reto;
+
+import java.util.Scanner;
+
+public class reto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int hora =0;
+		int minutos= 0;
+		int segundos= 0;
+		
+		Scanner entradaDatos =new Scanner(System.in);
+		
+		System.out.println("Escribe la hora:");
+		hora= entradaDatos.nextInt();
+		System.out.println("Escribe los minutos:");
+		minutos= entradaDatos.nextInt();
+		System.out.println("Escribe los segundos:");
+		segundos= entradaDatos.nextInt();
+		
+		 if (hora >= 0 && hora <= 23) {
+	            if (minutos >= 0 && minutos <= 59) {
+	                if (segundos >= 0 && segundos <= 59) {
+	                    System.out.print("La hora es correcta");
+	                }
+	                else {
+	                    System.out.print("La hora NO es correcta");
+	                }
+	            }
+	            else {
+	                System.out.print("La hora NO es correcta");
+	            }
+	        } 
+	        else {
+	            System.out.print("La hora NO es correcta");
+	        }
+	    }
+	}
